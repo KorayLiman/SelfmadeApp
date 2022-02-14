@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smapp/constants.dart';
 import 'package:smapp/homepage.dart';
 
 void main() {
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      darkTheme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomePage(),
+      home: DefaultTabController(length: 3, child: HomePage(), initialIndex: 0),
     );
   }
 }

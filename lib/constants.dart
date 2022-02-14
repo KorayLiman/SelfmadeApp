@@ -11,4 +11,8 @@ class Constants {
       GoogleFonts.quicksand(fontSize: 55, fontWeight: FontWeight.w800);
   static final EdgeInsets DrowDownPadding =
       EdgeInsets.symmetric(horizontal: 16, vertical: 8);
+
+  static const List<String> IMAGES = ["enum", "opoverloading", "templates","comingsoon","cpp"];
+
+ 
 }
